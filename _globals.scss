@@ -1,0 +1,62 @@
+html {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    width:100%;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* colors */
+
+
+$textprimary: #565454;
+
+$backgroundprimary: #fff;
+$backgoundsecondary:#F5F5F7;
+$buttonprimary: #1DC961;
+
+/*Buttons*/
+
+.button-primary {
+
+    display: inline-block;
+    padding: 12px 32px 11px 32px;
+
+    border-radius: 24px;
+
+    color: #fff;
+
+    background: $buttonprimary;
+
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+
+    text-align: left;
+
+    box-shadow: 0px 6px 8px rgba(69, 100, 85, 0.35);
+
+    @include breakpoint-down(small) {
+
+        display: block;
+        padding: 12px 0 11px 0;
+
+        text-align: center;
+        width: 100%;
+
+    }
+}
+
