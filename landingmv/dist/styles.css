@@ -29,7 +29,7 @@ a {
           box-shadow: 0px 6px 8px rgba(69, 100, 85, 0.35);
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 26.5em) {
   .button-primary {
     display: block;
     padding: 12px 0 11px 0;
@@ -74,7 +74,7 @@ a {
   margin-bottom: 36px;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 26.5em) {
   .hero__title {
     font-size: 24px;
     margin-bottom: 36px;
@@ -91,7 +91,7 @@ a {
   margin-bottom: 24px;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 26.5em) {
   .hero__text {
     font-size: 16px;
     margin-bottom: 48px;
@@ -110,7 +110,7 @@ a {
      object-position: center;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 26.5em) {
   .hero__image {
     height: 300px;
     max-width: calc(300px / 0.57);
@@ -147,7 +147,7 @@ a {
 @media (min-width: 40em) {
   .panaintro__container {
     padding: 0;
-    width: 100%;
+    width: 90%;
     height: 100vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -166,8 +166,8 @@ a {
 .panaintro__image {
   margin-top: 36px;
   height: 280px;
-  width: calc(280px / 0.722);
-  max-width: 100%;
+  width: 100%;
+  max-width: calc(280px / 0.75);
   background-image: url(/dist/assets/panateayuda-small.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -177,8 +177,8 @@ a {
 @media (min-width: 40em) {
   .panaintro__image {
     background-image: url(/dist/assets/panateayuda-big.png);
-    width: 450px;
-    height: calc(450px / 1.10);
+    width: 425px;
+    height: calc(425px / 1.10);
   }
 }
 
@@ -189,7 +189,7 @@ a {
   text-align: left;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 26.5em) {
   .panaintro__text-container {
     text-align: center;
   }
@@ -204,7 +204,13 @@ a {
   margin-bottom: 36px;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
+  .panaintro__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 26.5em) {
   .panaintro__title {
     font-size: 24px;
     margin-bottom: 36px;
@@ -222,9 +228,14 @@ a {
   margin-bottom: 24px;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .panaintro__text {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .panaintro__text {
     margin-bottom: 48px;
     text-align: center;
   }
