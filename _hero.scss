@@ -144,7 +144,6 @@
 
         height: 280px;
         width:  100%;
-        max-width:calc(280px / 0.75);
 
         background-image: url(/dist/assets/panateayuda-small.png);
         background-repeat: no-repeat;
@@ -159,6 +158,8 @@
 
             width:425px;
             height: calc(425px / 1.10);
+
+            flex: 1;
         }
     }
 

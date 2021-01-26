@@ -40,7 +40,7 @@ a {
 
 .landing {
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   background: #F5F5F7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,10 +68,75 @@ a {
 .landing__vertical-line {
   display: block;
   width: 2px;
-  height: 256px;
+  height: 100%;
   background-color: #565454;
-  margin-left: 12px;
+  margin-left: 48px;
   margin-right: 24px;
+}
+
+@media (min-width: 26.5625em) {
+  .landing__vertical-line {
+    display: none;
+  }
+}
+
+.landing__secondary-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+}
+
+@media (min-width: 26.5625em) {
+  .landing__secondary-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.landing__logo {
+  width: 56px;
+  height: 66px;
+  background-image: url(/dist/assets/logo-small.svg);
+  margin-bottom: 32px;
+}
+
+@media (min-width: 26.5625em) {
+  .landing__logo {
+    background-image: url(/dist/assets/logo-big.svg);
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.landing__title {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #565454;
+  margin: 0;
+}
+
+@media (min-width: 26.5625em) {
+  .landing__title > br {
+    display: none;
+  }
+}
+
+@media (min-width: 40em) {
+  .landing__title {
+    font-size: 36px;
+  }
 }
 
 .hero__container {
@@ -203,7 +268,6 @@ a {
   margin-top: 36px;
   height: 280px;
   width: 100%;
-  max-width: calc(280px / 0.75);
   background-image: url(/dist/assets/panateayuda-small.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -215,6 +279,9 @@ a {
     background-image: url(/dist/assets/panateayuda-big.png);
     width: 425px;
     height: calc(425px / 1.10);
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
